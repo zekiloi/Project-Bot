@@ -102,7 +102,7 @@ def handle(update):
 		if text == "/start" or text == "/refresh":
 			if not uid in queue["occupied"]:
 				keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"tg://openmessage?user_id=1434374071"),InlineKeyboardButton(text="ᴏᴡɴᴇʀ ɪɢ", url=f"https://instagram.com/zekiloi"),InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/damnstoryy")]])
-				bot.sendMessage(uid, f"Halo 👋\n\naku adalah Bot Anonymous ChatBot\n┈───────────────────┈\nsemoga dapet teman baru atau pasangan\n┈───────────────────┈\nuntuk memulai percakapan 💬 ketik /search 🔍_", parse_mode='MarkDown', disable_web_page_preview=True , reply_markup=keyboard)
+				bot.sendMessage(uid, f"Halo aku adalah Bot Anonymous ChatBot\n┈───────────────────┈\nsemoga dapet teman baru atau pasangan\n┈───────────────────┈\nuntuk memulai percakapan 💬 ketik /search 🔍_", parse_mode='MarkDown', disable_web_page_preview=True , reply_markup=keyboard)
 		if 'message_id' in update:
 			if not uid in queue["occupied"]:
 				if text != "/start" and text != "Pengguna 👤" and text !="Next ▶️" and text != "/refresh" and text != "/test" and text != "/search" and text != "Search 🔍" and text != "🛠 Menu Bot" and text != "🔙 Main Menu" and text != "Info Profile 📌" and text != "📝 Info Covid-19"  and text != "/user":
